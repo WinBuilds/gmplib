@@ -1,11 +1,9 @@
 
 ## GMP WinBuild
 
-This is an unofficial repo. The Visual Studio project files can be found under the /windows directory. 
+This is an unofficial repo cloned from [GMP 6.1](https://gmplib.org/repo/gmp-6.1/). 
 
-These project files were derived from the project files created at [Matthew Oliver](https://github.com/Sibras)'s [ShiftMediaProject](https://github.com/ShiftMediaProject/), another good place to look for Windows builds. 
-
-This fork specifically supports VS2015, [GMP 6.1](https://gmplib.org/repo/gmp-6.1/), and the output has been reconfigured to follow the pattern common all `winbuild` repositories, which is: 
+The Visual Studio project files can be found under the `/windows` directory. The output has been reconfigured to follow the pattern common all `winbuild` repositories: 
 
 1. Output goes to:<br>
 `$(SolutionDir)..\..\..\..\\build_<tool>_<platform>\<configuration>\[lib|bin|include]`
@@ -14,42 +12,10 @@ This fork specifically supports VS2015, [GMP 6.1](https://gmplib.org/repo/gmp-6.
 
 3. Executables (.exe)  and dynamic link libraries (.dll) go to `bin`, static and import libraries go to `lib`, and public header files (.h) go to `include`.
 
-This project needs [YASM](https://github.com/yasm) to build. If you need to install it, you might want to use the [SMP VSYASM](https://github.com/ShiftMediaProject/VSYASM) script. It provides YASM integration for Visual Studio and it works perfectly. :)   
-
-## LICENSE
-
-Copyright 1991, 1996, 1999, 2000, 2007 Free Software Foundation, Inc.
-
-This file is part of the GNU MP Library.
-
-The GNU MP Library is free software; you can redistribute it and/or modify
-it under the terms of either:
-
-  * the GNU Lesser General Public License as published by the Free
-    Software Foundation; either version 3 of the License, or (at your
-    option) any later version.
-
-or
-
-
-  * the GNU General Public License as published by the Free Software
-    Foundation; either version 2 of the License, or (at your option) any
-    later version.
-
-or both in parallel, as here.
-
-The GNU MP Library is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
-or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
-for more details.
-
-You should have received copies of the GNU General Public License and the
-GNU Lesser General Public License along with the GNU MP Library.  If not,
-see [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
+This project needs [YASM](https://github.com/yasm) to build. If you need to install it, you might want to use the [SMP VSYASM](https://github.com/ShiftMediaProject/VSYASM) script. It provides YASM integration for Visual Studio and it works perfectly.
 
 
 ### THE GNU MP LIBRARY
-
 
 GNU MP is a library for arbitrary precision arithmetic, operating on signed
 integers, rational numbers, and floating point numbers.  It has a rich set of
@@ -115,3 +81,16 @@ You should first check the GNU MP web pages at [https://gmplib.org/](https://gmp
 Report bugs to [gmp-bugs@gmplib.org](mailto:gmp-bugs@gmplib.org).  What information is needed in a useful bug report is described in the manual.  The same address can be used for suggesting modifications and enhancements.
 
 
+### LICENSE
+
+Copyright 1991, 1996, 1999, 2000, 2007 Free Software Foundation, Inc.
+
+The GNU MP Library is free software; you can redistribute it and/or modify
+it under the terms of either the GNU Lesser General Public License as published by the Free Software Foundation, either version 2 or version 3 of the License, or both, or any later version, at your option.
+
+The GNU MP Library is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+for more details.
+
+See also [https://www.gnu.org/licenses/](https://www.gnu.org/licenses/).
