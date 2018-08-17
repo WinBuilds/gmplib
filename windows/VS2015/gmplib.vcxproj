@@ -1003,7 +1003,7 @@
       <PreprocessorDefinitions>__GMP_WITHIN_GMP;__GMP_WITHIN_GMPXX;HAVE_CONFIG_H;_WIN32_WINNT=0x0502;_DEBUG;DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)..;$(SolutionDir)..\..;$(SolutionDir)..\x86;$(SolutionDir)..\..\mpn;$(SolutionDir)..\..\mpn\x86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4018;4090;4101;4146;4244;4267;4307;4334;4554;4723;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -1107,7 +1107,7 @@ copy "$(SolutionDir)..\..\gmpxx.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Pla
       <AdditionalIncludeDirectories>$(SolutionDir)..;$(SolutionDir)..\..;$(SolutionDir)..\x86;$(SolutionDir)..\..\mpn;$(SolutionDir)..\..\mpn\x86;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4018;4090;4101;4146;4244;4267;4307;4334;4554;4723;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
-      <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>

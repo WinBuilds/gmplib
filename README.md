@@ -1,9 +1,9 @@
 
-## GMP WinBuild
+# GMP WinBuild
 
 This is an unofficial repo cloned from [GMP 6.1](https://gmplib.org/repo/gmp-6.1/). 
 
-The Visual Studio project files can be found under the `/windows` directory. The output has been reconfigured to follow the pattern common all `winbuild` repositories: 
+The binary outputs of the Visual Studio project files have been reconfigured to follow the pattern common all winbuild repositories. The Visual Studio project files can be found under the `/windows` directory.
 
 1. Output goes to:<br>
 `$(SolutionDir)..\..\..\..\\build_<tool>_<platform>\<configuration>\[lib|bin|include]`
@@ -15,7 +15,7 @@ The Visual Studio project files can be found under the `/windows` directory. The
 This project needs [YASM](https://github.com/yasm) to build. If you need to install it, you might want to use the [SMP VSYASM](https://github.com/ShiftMediaProject/VSYASM) script. It provides YASM integration for Visual Studio and it works perfectly.
 
 
-### THE GNU MP LIBRARY
+# THE GNU MP LIBRARY
 
 GNU MP is a library for arbitrary precision arithmetic, operating on signed
 integers, rational numbers, and floating point numbers.  It has a rich set of

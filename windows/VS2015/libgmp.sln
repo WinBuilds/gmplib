@@ -24,6 +24,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gmpdll", "gmpdll.vcxproj", 
 		{02B94302-23D6-43EF-8865-95CDE99D5DC2} = {02B94302-23D6-43EF-8865-95CDE99D5DC2}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "_ALL", "_ALL.vcxproj", "{AAB8B226-F1C1-4474-841B-F1A244277773}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F80A64E6-B107-4EF4-A908-BABA19E6E78D} = {F80A64E6-B107-4EF4-A908-BABA19E6E78D}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -72,6 +77,14 @@ Global
 		{F80A64E6-B107-4EF4-A908-BABA19E6E78D}.Release|x64.Build.0 = Release|x64
 		{F80A64E6-B107-4EF4-A908-BABA19E6E78D}.Release|x86.ActiveCfg = Release|Win32
 		{F80A64E6-B107-4EF4-A908-BABA19E6E78D}.Release|x86.Build.0 = Release|Win32
+		{AAB8B226-F1C1-4474-841B-F1A244277773}.Debug|x64.ActiveCfg = Debug|x64
+		{AAB8B226-F1C1-4474-841B-F1A244277773}.Debug|x64.Build.0 = Debug|x64
+		{AAB8B226-F1C1-4474-841B-F1A244277773}.Debug|x86.ActiveCfg = Debug|Win32
+		{AAB8B226-F1C1-4474-841B-F1A244277773}.Debug|x86.Build.0 = Debug|Win32
+		{AAB8B226-F1C1-4474-841B-F1A244277773}.Release|x64.ActiveCfg = Release|x64
+		{AAB8B226-F1C1-4474-841B-F1A244277773}.Release|x64.Build.0 = Release|x64
+		{AAB8B226-F1C1-4474-841B-F1A244277773}.Release|x86.ActiveCfg = Release|Win32
+		{AAB8B226-F1C1-4474-841B-F1A244277773}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
