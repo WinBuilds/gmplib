@@ -916,6 +916,7 @@
     <RootNamespace>libgmp</RootNamespace>
     <ProjectName>gmplib</ProjectName>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectRoot>$(WINBUILDS_ROOT)</ProjectRoot>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -968,30 +969,30 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
-    <IntDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
+    <OutDir>$(ProjectRoot)build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
+    <IntDir>$(ProjectRoot)build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
     <TargetName>$(ProjectName)</TargetName>
     <CustomBuildAfterTargets>
     </CustomBuildAfterTargets>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IntDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
+    <IntDir>$(ProjectRoot)build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
     <TargetName>$(ProjectName)</TargetName>
-    <OutDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
+    <OutDir>$(ProjectRoot)build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
     <CustomBuildAfterTargets>
     </CustomBuildAfterTargets>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
-    <IntDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
+    <OutDir>$(ProjectRoot)build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
+    <IntDir>$(ProjectRoot)build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
     <TargetName>$(ProjectName)</TargetName>
     <CustomBuildAfterTargets>
     </CustomBuildAfterTargets>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IntDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
+    <IntDir>$(ProjectRoot)build_msvc14_$(Platform)/$(Configuration)/obj/$(ProjectName)/</IntDir>
     <TargetName>$(ProjectName)</TargetName>
-    <OutDir>$(SolutionDir)../../../../build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
+    <OutDir>$(ProjectRoot)build_msvc14_$(Platform)/$(Configuration)/lib/</OutDir>
     <CustomBuildAfterTargets>
     </CustomBuildAfterTargets>
   </PropertyGroup>
@@ -1018,9 +1019,9 @@
       </AdditionalOptions>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
-copy "$(SolutionDir)..\gmp.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
-copy "$(SolutionDir)..\..\gmpxx.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+      <Command>mkdir "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+copy "$(SolutionDir)..\gmp.h" "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+copy "$(SolutionDir)..\..\gmpxx.h" "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
 </Command>
       <Message>copying include header files..</Message>
     </PostBuildEvent>
@@ -1065,9 +1066,9 @@ copy "$(SolutionDir)..\..\gmpxx.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Pla
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
-copy "$(SolutionDir)..\gmp.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
-copy "$(SolutionDir)..\..\gmpxx.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+      <Command>mkdir "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+copy "$(SolutionDir)..\gmp.h" "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+copy "$(SolutionDir)..\..\gmpxx.h" "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
 </Command>
       <Message>copying include header files..</Message>
     </PostBuildEvent>
@@ -1122,9 +1123,9 @@ copy "$(SolutionDir)..\..\gmpxx.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Pla
       <AdditionalOptions>/IGNORE:4042 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
-copy "$(SolutionDir)..\gmp.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
-copy "$(SolutionDir)..\..\gmpxx.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+      <Command>mkdir "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+copy "$(SolutionDir)..\gmp.h" "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+copy "$(SolutionDir)..\..\gmpxx.h" "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
 </Command>
       <Message>copying include header files..</Message>
     </PostBuildEvent>
@@ -1177,9 +1178,9 @@ copy "$(SolutionDir)..\..\gmpxx.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Pla
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
-copy "$(SolutionDir)..\gmp.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
-copy "$(SolutionDir)..\..\gmpxx.h" "$(SolutionDir)..\..\..\..\build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+      <Command>mkdir "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+copy "$(SolutionDir)..\gmp.h" "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
+copy "$(SolutionDir)..\..\gmpxx.h" "$(ProjectRoot)build_msvc14_$(Platform)\$(Configuration)\include\libgmp\"
 </Command>
       <Message>copying include header files..</Message>
     </PostBuildEvent>

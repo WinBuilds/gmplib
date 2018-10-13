@@ -25,6 +25,7 @@
     <ProjectGuid>{6859A4C8-BE7F-4282-8A71-2936AB052205}</ProjectGuid>
     <RootNamespace>gen-psqr</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectRoot>$(WINBUILDS_ROOT)</ProjectRoot>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

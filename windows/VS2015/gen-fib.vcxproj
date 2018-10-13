@@ -25,6 +25,7 @@
     <ProjectGuid>{D64CDBFD-FAF5-4AB2-9A7A-3CFAF86A0354}</ProjectGuid>
     <RootNamespace>gen-fib</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectRoot>$(WINBUILDS_ROOT)</ProjectRoot>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
