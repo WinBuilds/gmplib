@@ -25,6 +25,7 @@
     <ProjectGuid>{90BC19D8-3074-4BB6-BE35-58D46113CBE8}</ProjectGuid>
     <RootNamespace>gen-bases</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectRoot>$(WINBUILDS_ROOT)</ProjectRoot>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

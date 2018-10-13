@@ -25,6 +25,7 @@
     <ProjectGuid>{51EF8902-63B3-4579-B816-B4DC3A2789ED}</ProjectGuid>
     <RootNamespace>gen-fac</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectRoot>$(WINBUILDS_ROOT)</ProjectRoot>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
